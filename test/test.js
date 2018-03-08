@@ -16,3 +16,21 @@ describe('value at index 1', function() {
       });
     });
   });
+
+  let array = [];
+
+  for (let i = 0; i < 101; i++) {
+      array.push(i);
+  }
+
+//   array.sort((a, b) => {
+//       return a - b;
+//   });
+
+  describe('value at index 100', function() {
+    describe('binarySearch', function() {
+      it('should return 100 when the value is at index 100', function() {
+        assert.equal(binarySearch(array, 100), 100);
+      });
+    });
+  });
